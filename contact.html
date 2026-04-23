@@ -1,25 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My contact</title>
-    <link rel="stylesheet" href="about.html">
-    <link rel="stylesheet" href="about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Pepertua</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
-    
-</body>
-<header>
-    <nav class="navbar">
-        <label class="name">Perpetual</label>
 
-        <ul>
-            <li><a href="lesson1.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<header>
+  <nav class="navbar">
+    <label class="name"><span class="lg">P</span>EPERTUA</label>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
+<main>
+  <section class="contact-section">
+    <h1>CONTACT <span class="accent">ME</span></h1>
+
+    <div class="contact-card">
+      <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-envelope"></i> pepertua.rojasi@gmail.com</p>
+        <p><i class="fab fa-facebook"></i> Projasi</p>
+
+        <h3>Social Handles</h3>
+        <div class="social-handles">
+          <a href="https://wa.me/263778426922"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button onclick="sendMsg(this)">Send Message</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="footer-name">Pepertua R<span>.</span></p>
+  <div class="footer-icons">
+    <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://wa.me/263778426922" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  <p class="footer-copy">&copy; 2026 p.rojasi. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  function sendMsg(btn) {
+    btn.textContent = 'Sent ✓';
+    btn.style.background = 'green';
+    setTimeout(() => {
+      btn.textContent = 'Send Message';
+      btn.style.background = '';
+    }, 3000);
+  }
+</script>
+
+</body>
 </html>

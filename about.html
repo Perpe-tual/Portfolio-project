@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About page</title>
-    <link rel="stylesheet" href="lesson1.html">
-    <link rel="stylesheet" href="about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Pepertua</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
 
-    <header>
-    <nav class="navbar">
-      <label class="name"><span class="lg">P</span> <span class="zii">erpetual</span></label>
+<header>
+  <nav class="navbar">
+    <label class="name"><span class="lg">P</span>EPERTUA</label>
 
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
 
-        <ul>
-            <li><a href="lesson1.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<div class="txt">
-         <h1>ABOUT ME</h1>
+<main>
+  <section class="about-section">
+    <h1><span class="accent">ABOUT</span> ME</h1>
 
-<div class="mufananidzo">
+    <div class="about-grid">
+      <div class="about-img">
+        <img src="pictures/Screenshot 2026-04-14 150006.png" alt="Pepertua">
+      </div>
 
-       <div>
-        <img src="pictures/Screenshot 2026-04-14 150006.png" alt=""description" width="600"">
-        <div>
-            <div class="txts">
-        <p>At the moment, I am developing my skills in HTML and CSS and learning how websites are structured and designed. <br> </p>
-            
-        <p>I am also exploring user interface design principles and how to create experiences that are simple and useful for users. <br> </p>
-             
-        <p>I enjoy learning new tools, working on practical projects, and improving my technical skills step by step. <br> </p>
-            
-        <p>My goal is to become a well-rounded technology professional who can contribute to building modern digital products. <br> </p>
-            
-        <p>This portfolio shows some of the work I am currently learning and creating as part of my journey in technology.</p>
+      <div class="about-text">
+        <p>At the moment, I am developing my skills in HTML and CSS and learning how websites are structured and designed.</p>
+        <p>I am also exploring user interface design principles and how to create experiences that are simple and useful for users.</p>
+        <p>I enjoy learning new tools, working on practical projects, and improving my technical skills step by step.</p>
+        <p>My goal is to become a well-rounded technology professional who can contribute to building modern digital products.</p>
+
+        <h2 class="skills-heading"><span class="accent">MY</span> SKILLS</h2>
+
+        <div class="skills-list">
+          <div class="skill">
+            <div class="skill-label"><span>HTML</span><span>90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-label"><span>CSS</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-label"><span>Python</span><span>70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+          </div>
+          <div class="skill">
+            <div class="skill-label"><span>UI/UX Design</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-        <h2>My Skills</h2>
-    
+<footer>
+  <p class="footer-name">Pepertua R<span>.</span></p>
+  <div class="footer-icons">
+    <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://wa.me/263778426922" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  <p class="footer-copy">&copy; 2026 p.rojasi. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+</script>
+
 </body>
 </html>

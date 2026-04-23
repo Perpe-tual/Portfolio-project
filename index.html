@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepertua Rojasi — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
-<h1>Hello World!</h1> 
-<h2>Hello World!</h2>
-<h3>Hello World!</h3>
-<h4>Hello World!</h4>
-<h5>Hello World!</h5>
-<h6>Hello World!</h6>
+
+<header>
+  <nav class="navbar">
+    <label class="name"><span class="lg">P</span>EPERTUA</label>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-image">
+      <img src="pictures/WhatsApp Image 2026-04-16 at 11.37.25.jpeg" alt="Pepertua Rojasi">
+    </div>
+    <div class="hero-text">
+      <p class="greeting">Hello!</p>
+      <h1>I'm <span class="accent">Pepertua Rojasi</span></h1>
+      <p class="badge">Uncommon Student</p>
+      <p class="bio">I am currently a student learning Software Engineering, Product Design, and Digital Marketing.</p>
+      <p class="bio">I am more than grateful to God for this opportunity. I look forward to nothing but the best during this bootcamp.</p>
+      <a href="contact.html" class="btn">Let's link</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p class="footer-name">Pepertua R<span>.</span></p>
+  <div class="footer-icons">
+    <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://wa.me/263778426922" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  <p class="footer-copy">&copy; 2026 p.rojasi. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+</script>
+
 </body>
-</html>  
+</html>
